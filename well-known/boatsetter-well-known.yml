@@ -1,0 +1,44 @@
+generated: '2026-08-02'
+method: probed
+source: live HTTPS probes of every Boatsetter host known to apis.yml
+note: >-
+  Every RFC 8615 well-known path probed on every Boatsetter host returned 404.
+  No security.txt, no OIDC/OAuth discovery document, no api-catalog, no
+  ai-plugin manifest, and no A2A agent card is published. This file records the
+  negative result so later enrichment rounds do not re-probe blind; it is NOT
+  wired as a `WellKnown` pointer in apis.yml because no document was found.
+found: 0
+hosts:
+  - host: https://www.boatsetter.com
+  - host: https://boatsetter.com
+  - host: https://support.boatsetter.com
+documents: []
+probes:
+  - path: /.well-known/security.txt
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/openid-configuration
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/api-catalog
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/agent-card.json
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /.well-known/agent.json
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+  - path: /llms.txt
+    status: 404
+    hosts: [www.boatsetter.com, boatsetter.com, support.boatsetter.com]
+x-evidence:
+  fetched: '2026-08-02'
+  user_agent: Mozilla/5.0
+  method: HTTPS GET, redirects followed

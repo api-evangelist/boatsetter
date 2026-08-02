@@ -1,0 +1,47 @@
+# Boatsetter
+
+> Boatsetter is a peer-to-peer boat rental marketplace connecting boat owners with renters and USCG-licensed captains. Founded 2012, headquartered in Miami (originally Fort Lauderdale), with 50,000+ boats across 600-700 locations worldwide. Boatsetter publishes no public developer API, OpenAPI definition, SDK, or developer portal — the surfaces below are human-facing web and mobile applications.
+
+<!-- generated: 2026-08-02 -->
+<!-- method: generated -->
+<!-- source: apis.yml + API Evangelist enrichment pipeline probes (no provider /llms.txt published; https://www.boatsetter.com/llms.txt returns 404) -->
+
+## APIs
+
+- No public API. Boatsetter does not publish an OpenAPI, GraphQL schema, MCP server, or A2A agent card. Every discovery path was probed on 2026-08-02 and returned 404 or did not resolve; see contract-discovery.yml in this repository for the full evidence table.
+
+## Platform
+
+- [Boatsetter](https://www.boatsetter.com): Book a boat rental with or without a captain, worldwide.
+- [How It Works](https://www.boatsetter.com/how-it-works): How renting and listing on Boatsetter works.
+- [List Your Boat](https://www.boatsetter.com/a/list-boat): Owner onboarding to list a vessel on the marketplace.
+- [Sign Up / Log In](https://www.boatsetter.com/a/auth): Account creation and authentication.
+- [Boat Rental Guides](https://www.boatsetter.com/boat-rentals): Location and boat-type rental guides.
+- [Rules & Regulations](https://www.boatsetter.com/regulations): Boating rules and regulations by area.
+
+## Company
+
+- [About](https://www.boatsetter.com/about): Company mission, scale, and history.
+- [Press](https://www.boatsetter.com/press): Press contact and media coverage.
+- [Careers](https://www.boatsetter.com/jobs): Open roles.
+- [Blog / Boating Resources](https://www.boatsetter.com/boating-resources): Editorial content, guides, and company news.
+
+## Support & Legal
+
+- [Support](https://support.boatsetter.com/): Help center for renters, owners, and captains.
+- [Terms of Service](https://www.boatsetter.com/legal/terms_of_service)
+- [Privacy Policy](https://www.boatsetter.com/legal/privacy_policy)
+- [Boatsetter Promise](https://www.boatsetter.com/legal/boatsetter_promise): Insurance and safety commitments.
+
+## Applications
+
+- [iOS — Boatsetter Boat Rentals](https://apps.apple.com/us/app/boatsetter-boat-rentals/id1449873080)
+- [Android — Boatsetter Boat Rentals](https://play.google.com/store/apps/details?id=com.boatsetterrenters)
+- [Android — Boatsetter Owner App](https://play.google.com/store/apps/details?id=com.boatsetter.app)
+
+## Optional
+
+- [GitHub](https://github.com/boatsetter): One archived public repository (a 2015 fork of jquery.serializeJSON); no first-party SDK or spec.
+- [Sitemap](https://www.boatsetter.com/sitemaps/sitemap.xml)
+- [robots.txt](https://www.boatsetter.com/robots.txt): Disallows the private `/domestic/v1/*` and `/domestic/v2/*` application endpoints.
+- Corporate: Boatsetter and Getmyboat announced a merger on 2025-12-18; both platforms continue to operate.

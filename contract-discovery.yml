@@ -1,0 +1,79 @@
+generated: '2026-08-02'
+method: probed
+source: API Evangelist enrichment pipeline, STEP 0b contract discovery
+summary: >-
+  Boatsetter publishes no machine-readable API contract of any kind. Every REST
+  OpenAPI, GraphQL, MCP and A2A discovery path was probed against every known
+  Boatsetter host and all of them missed. Boatsetter also publishes no developer
+  portal, no API documentation, no SDK, and no partner API program. The only
+  evidence of an internal HTTP API is the `/domestic/v1/*` and `/domestic/v2/*`
+  path prefixes disallowed in https://www.boatsetter.com/robots.txt, which are
+  private application endpoints (404 to anonymous callers) and are NOT recorded
+  as an API in apis.yml.
+hosts_probed:
+  - https://www.boatsetter.com
+  - https://boatsetter.com
+  - https://api.boatsetter.com
+  - https://support.boatsetter.com
+rest_openapi:
+  found: false
+  probes:
+    - {url: 'https://www.boatsetter.com/openapi.json', status: 404}
+    - {url: 'https://www.boatsetter.com/api-docs', status: 404}
+    - {url: 'https://www.boatsetter.com/domestic/v1/swagger.json', status: 404}
+    - {url: 'https://www.boatsetter.com/domestic/v2/swagger.json', status: 404}
+    - {url: 'https://api.boatsetter.com/openapi.json', status: 404}
+    - {url: 'https://api.boatsetter.com/swagger.json', status: 404}
+    - {url: 'https://api.boatsetter.com/docs', status: 404}
+graphql:
+  found: false
+  probes:
+    - {url: 'https://www.boatsetter.com/graphql', status: 404}
+    - {url: 'https://api.boatsetter.com/graphql', status: 404}
+mcp:
+  found: false
+  probes:
+    - {url: 'https://mcp.boatsetter.com/', status: 0, note: DNS does not resolve}
+a2a_agent_card:
+  found: false
+  probes:
+    - {url: 'https://www.boatsetter.com/.well-known/agent-card.json', status: 404}
+    - {url: 'https://www.boatsetter.com/.well-known/agent.json', status: 404}
+    - {url: 'https://boatsetter.com/.well-known/agent-card.json', status: 404}
+    - {url: 'https://boatsetter.com/.well-known/agent.json', status: 404}
+    - {url: 'https://support.boatsetter.com/.well-known/agent-card.json', status: 404}
+    - {url: 'https://support.boatsetter.com/.well-known/agent.json', status: 404}
+developer_surface:
+  developer_portal: false
+  api_documentation: false
+  sdks: false
+  cli: false
+  postman: false
+  status_page: false
+  changelog: false
+  probes:
+    - {url: 'https://developer.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://developers.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://docs.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://partners.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://status.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://trust.boatsetter.com/', status: 0, note: DNS does not resolve}
+    - {url: 'https://security.boatsetter.com/', status: 0, note: DNS does not resolve}
+github:
+  org: https://github.com/boatsetter
+  public_repos: 1
+  note: >-
+    The single public repository is an archived 2015 fork of
+    marioizquierdo/jquery.serializeJSON. No first-party SDK, spec, or library.
+third_party_surface:
+  - kind: consumer-partnership
+    partner: Airbnb
+    note: Boat bookings surfaced alongside Airbnb stays; no developer-facing API.
+  - kind: affiliate-program
+    note: Boatsetter runs an affiliate marketing program (link-based, not an API).
+corporate:
+  note: >-
+    Boatsetter and Getmyboat announced a merger on 2025-12-18, forming a combined
+    marketplace with roughly $500M in bookings across 50 countries and headquarters
+    in Miami. Both platforms and apps continue to operate separately for now, so a
+    future round should re-probe both surfaces for a unified partner API.
