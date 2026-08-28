@@ -21,6 +21,17 @@ description: >-
   serialization plugin, and its third party surface is limited to consumer
   facing partnerships (Airbnb) and an affiliate marketing program.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
