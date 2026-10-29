@@ -64,32 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Boatsetter is a peer-to-peer boat rental marketplace connecting boat owners with renters and
-USCG-licensed captains. Founded in 2012 and headquartered in Miami, the platform lists 50,000+
-boats across 600-700 locations worldwide, bookable bareboat or with a captain, with insurance,
-payments, messaging and owner tooling layered on top of owner-supplied inventory. In December
-2025 Boatsetter and Getmyboat announced a merger forming a combined marketplace expected to
-process roughly $500M in bookings across 50 countries; both platforms continue to operate.
+Boatsetter is a Fort Lauderdale, Florida founded and Miami headquartered peer-to-peer boat rental marketplace that connects boat owners with renters and with United States Coast Guard licensed captains. Founded in 2012, the platform lists more than 50,000 boats across 600 to 700 locations worldwide and 20,000 makes and models, spanning fishing boats, pontoons, sailboats, party boats, watersports vessels and luxury yacht charters, bookable either bareboat or with a captain. Boatsetter layers identity verification, an insurance program underwritten through its Buoy partnership, payments, messaging, calendar and pricing tools for owners, and trust and safety on top of owner supplied inventory, and takes a marketplace commission on each booking. The company also operates a separate Boatsetter Owner application for hosts, and in December 2025 announced a merger with Getmyboat to form a combined boat rental marketplace expected to process roughly 500 million dollars in bookings across 50 countries, with both platforms and apps continuing to operate. Boatsetter does not publish a public developer API, OpenAPI definition, SDK, developer portal, or partner API documentation; its only public GitHub presence is a single archived fork of a jQuery form serialization plugin, and its third party surface is limited to consumer facing partnerships (Airbnb) and an affiliate marketing program.
 
-- Website: https://www.boatsetter.com
-- Support: https://support.boatsetter.com/
-- Blog: https://www.boatsetter.com/boating-resources
+**Areas:** Boat Rental · Peer-to-Peer · Marketplace · Travel · Boating · Maritime · Yacht Charter · Watersports · Recreation · Sharing Economy
 
-## API surface
+## Boatsetter on APIs.io
 
-**Boatsetter publishes no public API.** As of 2026-08-02 there is no developer portal, no API
-documentation, no OpenAPI/Swagger definition, no GraphQL endpoint, no MCP server, no A2A agent
-card, no SDK, and no CLI. Every discovery path was probed against every known Boatsetter host —
-see [`contract-discovery.yml`](contract-discovery.yml) for the full evidence table with HTTP
-status codes. The only public GitHub repository is an archived 2015 fork of
-`jquery.serializeJSON`. Third-party surfaces are consumer partnerships (Airbnb) and a
-link-based affiliate program, not an API.
+Everything profiled for Boatsetter is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/boatsetter/](https://apis.io/providers/boatsetter/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Path | Type | Method |
-|---|---|---|
-| `contract-discovery.yml` | contract discovery evidence | probed |
-| `well-known/boatsetter-well-known.yml` | WellKnown probe record (0 found) | probed |
-| `security/boatsetter-domain-security.yml` | DomainSecurity | probed |
-| `llms/boatsetter-llms.txt` | LLMsTxt | generated |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Boatsetter Domain Security](https://apis.io/security/boatsetter/boatsetter-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.boatsetter.com)
+- [Sign up](https://www.boatsetter.com/a/auth)
+- [Support](https://support.boatsetter.com/)
+- [Blog](https://www.boatsetter.com/boating-resources)
+- [Terms of service](https://www.boatsetter.com/legal/terms_of_service)
+- [Privacy policy](https://www.boatsetter.com/legal/privacy_policy)
+- [GitHub](https://github.com/boatsetter)
+
+## API Evangelist rating
+
+**Kin Score 14.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/boatsetter/](https://apis.io/providers/boatsetter/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Boatsetter: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/boatsetter/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
